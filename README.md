@@ -1,76 +1,59 @@
-Determining the Framework for Prediction of Biomass of Algae
+# Determining the Framework for Prediction of Biomass of Algae
 
-This project aims to predict the biomass of algae using various machine learning frameworks. It includes multiple datasets in .xlsx and .csv formats and pre-trained models in .pkl files. The project provides a comprehensive workflow for data preprocessing, model evaluation, and prediction.
-Features
+This project aims to predict the biomass of algae using various machine learning frameworks. It includes multiple datasets in `.xlsx` and `.csv` formats and pre-trained models in `.pkl` files. The project provides a comprehensive workflow for data preprocessing, model evaluation, and prediction.
 
-    Pre-Trained Models: Includes several .pkl files for different algorithms such as CatBoost, Gradient Boosting, SVR, and XGBoost.
-    Dataset Variety: Contains multiple datasets in .xlsx and .csv formats, including resampled and cleaned data.
-    End-to-End Workflow: Covers data loading, preprocessing, model inference, and result visualization.
-    Performance Evaluation: Compares the accuracy and metrics of different models for predicting algae biomass.
+## Features
 
-Project Structure
+- **Pre-Trained Models**: Includes several `.pkl` files for different algorithms such as CatBoost, Gradient Boosting, SVR, and XGBoost.
+- **Dataset Variety**: Contains multiple datasets in `.xlsx` and `.csv` formats, including resampled and cleaned data.
+- **End-to-End Workflow**: Covers data loading, preprocessing, model inference, and result visualization.
+- **Performance Evaluation**: Compares the accuracy and metrics of different models for predicting algae biomass.
 
-.
-├── algae_final.ipynb          # Main Jupyter Notebook for execution
-├── pkl files/                 # Directory containing pre-trained models
-│   ├── best_model_CatBoost.pkl
-│   ├── catboost_model.pkl
-│   ├── final_model.keras
-│   ├── gbm_model.pkl
-│   ├── model_stacking.pkl
-│   ├── svr_model.pkl
-│   └── xgboost_model.pkl
-├── dataset/                   # Directory containing datasets
-│   ├── new_data.csv
-│   ├── raceway1.xlsx
-│   ├── raceway2.xlsx
-│   ├── raceway3.xlsx
-│   └── resampled_data.csv
-├── README.md                  # Project documentation
-└── requirements.txt           # Python dependencies
+## Project Structure
 
-Datasets
+. ├── algae_final.ipynb # Main Jupyter Notebook for execution ├── pkl files/ # Directory containing pre-trained models │ ├── best_model_CatBoost.pkl │ ├── catboost_model.pkl │ ├── final_model.keras │ ├── gbm_model.pkl │ ├── model_stacking.pkl │ ├── svr_model.pkl │ └── xgboost_model.pkl ├── dataset/ # Directory containing datasets │ ├── new_data.csv │ ├── raceway1.xlsx │ ├── raceway2.xlsx │ ├── raceway3.xlsx │ └── resampled_data.csv ├── README.md # Project documentation └── requirements.txt # Python dependencies
 
-The dataset/ directory includes:
 
-    new_data.csv: A cleaned CSV dataset for prediction.
-    raceway1.xlsx, raceway2.xlsx, raceway3.xlsx: Raw data collected from different raceways for Spirulina cultivation.
-    resampled_data.csv: Preprocessed and resampled data for model training.
+## Datasets
 
-Dataset Usage
+The `dataset/` directory includes:
+- **`new_data.csv`**: A cleaned CSV dataset for prediction.
+- **`raceway1.xlsx`, `raceway2.xlsx`, `raceway3.xlsx`**: Raw data collected from different raceways for Spirulina cultivation.
+- **`resampled_data.csv`**: Preprocessed and resampled data for model training.
 
-    The .xlsx files contain raw data from various sources.
-    The .csv files (new_data.csv and resampled_data.csv) are cleaned and resampled versions of the datasets, ready for training and testing.
+### Dataset Usage
+- The `.xlsx` files contain raw data from various sources.
+- The `.csv` files (`new_data.csv` and `resampled_data.csv`) are cleaned and resampled versions of the datasets, ready for training and testing.
 
-Pre-Trained Models
+## Pre-Trained Models
 
-The pkl files/ directory contains:
-
-    best_model_CatBoost.pkl: Optimized CatBoost model.
-    catboost_model.pkl: Baseline CatBoost model.
-    gbm_model.pkl: Gradient Boosting model.
-    xgboost_model.pkl: XGBoost model.
-    svr_model.pkl: Support Vector Regression model.
-    model_stacking.pkl: Stacked ensemble of multiple models.
-    final_model.keras: Deep learning model saved in Keras format.
+The `pkl files/` directory contains:
+- **`best_model_CatBoost.pkl`**: Optimized CatBoost model.
+- **`catboost_model.pkl`**: Baseline CatBoost model.
+- **`gbm_model.pkl`**: Gradient Boosting model.
+- **`xgboost_model.pkl`**: XGBoost model.
+- **`svr_model.pkl`**: Support Vector Regression model.
+- **`model_stacking.pkl`**: Stacked ensemble of multiple models.
+- **`final_model.keras`**: Deep learning model saved in Keras format.
 
 These models can be used directly for predictions or fine-tuned further for specific tasks.
-Prerequisites
 
-    Python 3.x
-    Required Libraries:
-        pandas
-        numpy
-        matplotlib
-        scikit-learn
-        catboost
-        xgboost
-        keras
-        joblib (for loading .pkl files)
-        openpyxl (for handling Excel files)
+## Prerequisites
+
+- **Python 3.x**
+- Required Libraries:
+  - pandas
+  - numpy
+  - matplotlib
+  - scikit-learn
+  - catboost
+  - xgboost
+  - keras
+  - joblib (for loading `.pkl` files)
+  - openpyxl (for handling Excel files)
 
 Install the required libraries using:
-
+```bash
 pip install -r requirements.txt
 
 How to Run

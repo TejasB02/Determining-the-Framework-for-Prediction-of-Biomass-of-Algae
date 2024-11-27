@@ -9,25 +9,6 @@ This project aims to predict the biomass of algae using various machine learning
 - **End-to-End Workflow**: Covers data loading, preprocessing, model inference, and result visualization.
 - **Performance Evaluation**: Compares the accuracy and metrics of different models for predicting algae biomass.
 
-## Project Structure
-
-.
-├── algae_final.ipynb          # Main Jupyter Notebook for execution
-├── pkl files/                 # Directory containing pre-trained models
-│   ├── best_model_CatBoost.pkl
-│   ├── catboost_model.pkl
-│   ├── final_model.keras
-│   ├── gbm_model.pkl
-│   ├── model_stacking.pkl
-│   ├── svr_model.pkl
-│   └── xgboost_model.pkl
-├── data/                      # Directory for storing datasets
-│   └── spirulina_data.xlsx    # Example Excel dataset
-├── README.md                  # Project documentation
-└── requirements.txt           # Python dependencies
-
-
-
 ## Datasets
 
 The `dataset/` directory includes:
